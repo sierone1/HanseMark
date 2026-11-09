@@ -1,0 +1,17 @@
+## Interface: 16001
+## Title: Hanse Mark
+## IconTexture: Interface\AddOns\HanseMark\Media\Icon.tga
+## Notes: A precise world marker ring for group and raid leaders. Manual ground marker placement.
+## Notes-deDE: Präzises Bodenmarkierungsmenü für Gruppen- und Raidleiter. Manuelle Bodenplatzierung.
+## Author: Hanse
+## Version: 1.0.0
+## SavedVariables: HanseMarkDB
+## X-License: All Rights Reserved
+
+Locale.lua
+Styles.lua
+View.lua
+Core.lua
+Binding.lua
+Options.lua
+App.lua

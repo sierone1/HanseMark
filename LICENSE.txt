@@ -1,0 +1,25 @@
+Hanse Mark - All Rights Reserved
+Copyright (c) 2026 Hanse and the respective contributors.
+
+Hanse Mark is distributed free of charge. Permission is granted to download
+the author's official distribution and use the addon for personal gameplay,
+and to make private backup copies. This permission does not grant permission
+to publish modifications, redistribute, re-upload, sublicense or sell the addon
+or its original artwork. These uses require prior permission from the relevant
+rights holder, except where applicable law provides otherwise.
+
+The author may distribute this addon through CurseForge and other official
+distribution channels under the applicable platform terms.
+
+The source code is supplied in readable form. No payment or donation is required
+to use any included feature. Visibility of source code is not a grant of an
+open-source license.
+
+This notice applies only to rights held by the contributors. World of Warcraft,
+Warcraft, Blizzard names, trademarks and client-provided resources remain the
+property of their respective owners. No ownership or exclusive rights are
+claimed over third-party material or material not protected by applicable law.
+
+THE ADDON IS PROVIDED AS IS, WITHOUT WARRANTY TO THE EXTENT PERMITTED BY LAW.
+Nothing in this notice excludes rights or liabilities that cannot be excluded
+under applicable law. Blizzard's applicable addon rules and game terms apply.

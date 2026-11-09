@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible Hanse Mark problem.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Addon version, Forever build, language, interaction mode, enabled markers, group role and combat state. Exclude private account information.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostic output or error text
+      description: Run /hansemark diag after reproducing the issue. Remove personal information before sharing.
