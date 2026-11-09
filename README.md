@@ -2,62 +2,78 @@
 
 ![Hanse Mark](docs/logo.png)
 
-A customizable world-marker ring for group and raid leaders in **WoW Forever**.
-Select a symbol near your cursor, then place it on valid ground through WoW's normal marker interaction.
+[Deutsche Anleitung](README-DE.md)
 
-- Six appearances: Alliance, Horde, Satin, Clear Black, Orbit Black and Free.
-- Any combination of the eight world markers, with compact marker presets.
-- Click mode or hold-and-release mode.
-- Native German/English settings, safe previews and explicit key assignment.
-- Ring/icon size, opacity, labels, neutral center and screen-edge controls.
+Hanse Mark is a customizable world-marker ring for group and raid leaders in **WoW Forever**. Open it near your cursor, choose a symbol and place it on the ground. Version **1.0.0** targets Forever **1.60.1 / Interface 16001** and includes English and German. No additional addons are required.
 
-Open **Esc > Options > AddOns > Hanse Mark**, or `/hansemark`.
-No additional addons or external accounts are required. No automatic boss logic or marker placement.
+## Features and appearances
 
-## Instructions
+Choose any combination of the eight world markers. Active icons are spaced evenly; presets select none, three, five or all eight. Disabling an icon changes the menu without removing an existing world marker.
 
-HANSE MARK 1.0.0
-World-marker radial menu for group and raid leaders in WoW Forever.
+Six appearances are included:
 
-Install
-Fully exit WoW. Extract the HanseMark folder into your Forever client's Interface/AddOns
-folder. Restart WoW and enable Hanse Mark. Confirm that
-Interface/AddOns/HanseMark/HanseMark.toc exists directly at that location.
-New texture files may require a complete restart rather than /reload alone.
-Never load multiple copies of this addon.
+- **Alliance:** blue and gold with an ornamental faction frame.
+- **Horde:** red and dark metal with an ornamental faction frame.
+- **Satin:** a restrained metal ring; the default appearance.
+- **Clear:** black rings and sector dividers.
+- **Orbit:** black rings and small ticks without sector dividers.
+- **Free:** freestanding icons with soft hover feedback.
 
-Settings
-Esc > Options > AddOns > Hanse Mark, or /hansemark.
-Interaction: assign a key with conflict confirmation; choose click or hold mode.
-Markers: any subset of the eight world markers, with none/three/five/all presets.
-Appearance: Alliance, Horde, Satin, Clear Black, Orbit Black and Free.
-Satin is the default. Adjust ring size, icon size, opacity, labels, neutral center
-and screen-edge handling. Visual previews never place markers.
-The large preview follows the mouse; closing it restores the same settings tab.
-Info: automatic language, German/English, diagnostics and confirmed settings reset.
-Resetting settings preserves your keybinding.
+Adjust ring size, icon size, opacity, marker names, neutral-center size and screen-edge handling. German or English can be selected manually or follow the client language.
 
-Place
-Click mode: press the key, click a visible icon, then click valid ground.
-Hold mode: hold the key, move toward a marker, release, then click valid ground.
-Release in the center selects nothing. Escape/right-click cancels the ring.
-Cancel an existing ground reticle with WoW's normal controls before opening another ring.
-Click mode targets the actual icon; a highlighted sector alone is not a click target.
-Combat uses the same manually triggered secure marker workflow.
-WoW still governs groups, marking permissions, range and valid ground.
-Disabling an icon does not remove an existing world marker. Zero enabled icons cause
-no marker action. There is no automatic boss logic. Settings and bindings change only
-outside combat.
+## Installation and first start
 
-Support
-Run /hansemark diag after a problem. Include version, Forever build, language, mode,
-enabled markers, group role and combat state. For missing graphics, check installation
-and fully restart WoW. HanseMark/HanseMarkDB remain the internal names for compatibility.
+**CurseForge App:** select your WoW Forever installation/profile, find Hanse Mark and install it. Fully restart WoW after installation, especially when new artwork files are added.
 
-Validation
-The user visually accepted the current design. The core marker workflow was previously
-confirmed in game, including combat; extensions received independent local checks.
-This does not claim a fresh exhaustive live test of every style, group, key and combat
-combination.
+**Manual installation:** close WoW, extract the addon ZIP and copy its `HanseMark` folder into your Forever client's `Interface/AddOns` directory. The resulting file must be:
 
-[Deutsche Anleitung](README-DE.md) | [Changelog](CHANGELOG.md) | [License](LICENSE.txt) | [Validation](docs/VALIDATION.md)
+`<your Forever client folder>/Interface/AddOns/HanseMark/HanseMark.toc`
+
+Avoid a second nested `HanseMark` folder. Start WoW, enable the addon and open **Esc > Options > AddOns > Hanse Mark**, or enter `/hansemark`. Assign a key; none is assigned automatically. Replacing a conflicting binding requires confirmation showing the existing assignment.
+
+## Settings and safe previews
+
+**Interaction** contains the current binding, assignment/removal and click/hold mode. **Markers** contains individual icons and presets. **Appearance** contains the six styles and display controls. **Info** contains language, help, diagnostics and a confirmed settings reset.
+
+The embedded preview updates with your choices. The large preview follows the mouse and never places markers. Its center and outside area select nothing. Closing it returns to the same Hanse Mark settings tab. Enable at least one marker to display a ring preview.
+
+## Placing markers
+
+**Click mode:**
+
+1. Press your assigned key to open the ring.
+2. Click the desired visible icon.
+3. Move to valid ground and click again to place the marker.
+
+**Hold mode:**
+
+1. Hold your assigned key.
+2. Move toward the desired marker and release the key.
+3. Click valid ground to place it.
+
+Releasing in the neutral center cancels. Escape or right-click cancels the ring selection. Cancel an already active ground-target reticle with WoW's normal controls before opening another selection. Click mode requires clicking the icon itself; highlighted sectors alone are not click targets.
+
+## Combat, permissions and saved settings
+
+The manual protected workflow supports combat use. WoW still controls group permissions, range and valid ground; the addon does not grant marking rights. A zero-marker selection performs no marker action. Settings and bindings change only outside combat. There is no automatic boss logic or automatic placement.
+
+Appearance and behavior settings use account-wide `HanseMarkDB` within the current WoW client/account. Keybindings use WoW's active binding set. For updates, close WoW and replace the addon folder while preserving saved variables. Existing settings migrate automatically. Confirmed reset restores addon defaults while keeping the binding; binding removal is a separate action.
+
+## Commands and troubleshooting
+
+- `/hansemark` or `/hmark`: open settings.
+- `/hansemark diag` or `/hmark diag`: print diagnostics.
+
+No ring: check the binding and enabled markers. No placement: check your group rights and valid ground. Missing artwork: verify the folder structure and fully restart WoW; `/reload` alone may be insufficient for new files. For reports, include addon version, Forever build, language, mode, enabled markers, group role, combat state, reproduction steps and diagnostic output. Remove private information from screenshots.
+
+## Credits and licensing
+
+Developed by **Steve Motzek (Hanse)** with AI-assisted development and artwork. Graphics include AI-generated/edited artwork and programmatically built UI textures. The published style montage is a composition of actual addon textures, **not an in-game screenshot**.
+
+The addon is free to use under its **All Rights Reserved** license. Read `LICENSE.txt` for permissions. Blizzard names, trademarks and client resources remain with their owners. Hanse Mark is an independent fan addon, not affiliated with or endorsed by Blizzard.
+
+[Changelog](CHANGELOG.md) · [License](LICENSE.txt) · [Validation record](docs/VALIDATION.md)
+
+## Source and support / Quellcode und Hilfe
+
+[Source / Quellcode](https://github.com/sierone1/HanseMark) · [Issues / Fehler melden](https://github.com/sierone1/HanseMark/issues)
